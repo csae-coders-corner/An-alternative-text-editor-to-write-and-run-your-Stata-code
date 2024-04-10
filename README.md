@@ -41,6 +41,27 @@ A screenshot of the Sublime interface:
  
   - In ST3, start the command palette with Ctrl+Shift+P, type “install” and hit Enter”:
 
+![texteditor2](https://github.com/csae-coders-corner/An-alternative-text-editor-to-write-and-run-your-Stata-code/assets/148211163/2d9de994-d8d4-4a25-99e7-511578e2d740)
 
+  - Now search for “StataEditor” and just click on it to install:
 
+    ![texteditor3](https://github.com/csae-coders-corner/An-alternative-text-editor-to-write-and-run-your-Stata-code/assets/148211163/52144c0a-b856-40c6-b405-8ed41e017ec5)
 
+  - **Install Pywin32**: repeat steps “a” and “b” above, but now installing the “Pywin32” package.
+
+  - **Configure StataEditor**: In ST3 go to the top menu and click on Preferences > Package Settings > StataEditor > Settings - User. In the file that will open, you will have to write the path to your Stata executable (make sure you check if your Stata is SE? or MP?) and the version. For example, my configuration file in Windows looks like this:
+
+![texteditor4](https://github.com/csae-coders-corner/An-alternative-text-editor-to-write-and-run-your-Stata-code/assets/148211163/2fba2df7-b282-4806-a12b-90d9f0b76501)
+
+  - **Register Stata Automation library**: go to the Stata executable (.exe) for which you copied the path (e.g. StataSE-64.exe) and create a shortcut for it (on your desktop). Now right click on this new shortcut and select “Properties”. In the “Target” field, add “ /Register” at the end (with a preceding space).” As in:
+"C:\Program Files\Stata16\StataSE-64.exe"  /Register
+
+![texteditor5](https://github.com/csae-coders-corner/An-alternative-text-editor-to-write-and-run-your-Stata-code/assets/148211163/f965ebd2-1175-42fc-bfb7-cbf40ee58bb7)
+
+  - Apply and accept the changes and right click again on the shortcut and choose to “Run as administrator”. Job done, nothing will happen, but if all the steps run smoothly, you should be ready to start using ST3 to write and run Stata code.
+
+  - Just to confirm, restart ST3 and open an existing do-file (or create a new one saving it with a .do extension). You should read “Stata” on the bottom right corner, and should be able to execute selections or complete do-files with Ctrl+D.
+
+**Another useful [reference for Sublime Text commands is available here](https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/reference/commands.html).**
+
+**Giulio Schinaia, DPhil Candidate in Economics, Balliol College, and Research Assistant at the Mind and Behaviour Research Group, Blavatnik School of Government, Oxford, 20 January 2020**
