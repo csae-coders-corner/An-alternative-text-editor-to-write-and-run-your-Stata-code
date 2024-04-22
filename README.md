@@ -1,3 +1,6 @@
+
+![CC Graphics 2024_TextEditor](https://github.com/csae-coders-corner/An-alternative-text-editor-to-write-and-run-your-Stata-code/assets/148211163/33287e83-1d24-4295-af27-36a2f56d6e09)
+
 # An-alternative-text-editor-to-write-and-run-your-Stata-code
 Do you spend a lot of time opening and closing different do-files looking for a particular line of code?
 
